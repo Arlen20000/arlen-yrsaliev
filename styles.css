@@ -1,0 +1,55 @@
+/* Основной стиль для body */
+body {
+    font-family: 'Arial', sans-serif; /* Современный шрифт */
+    background-color: #f4f4f4; /* Светлый фон для страницы */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Центрирование по вертикали */
+}
+
+/* Контейнер для ссылок */
+.container {
+    display: grid; /* Используем сетку для расположения ссылок */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматическое расположение колонок */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px; /* Ограничение ширины для больших экранов */
+}
+
+/* Стили для ссылок */
+a {
+    display: block;
+    text-decoration: none;
+    color: #333; /* Темный цвет текста */
+    background-color: #ffffff; /* Белый фон для ссылок */
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Плавные анимации */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для ссылок */
+}
+
+/* При наведении */
+a:hover {
+    background-color: #007bff; /* Синий фон при наведении */
+    color: white; /* Белый цвет текста при наведении */
+    transform: translateY(-5px); /* Легкое поднимание ссылки */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Усиленная тень при наведении */
+}
+
+/* При активном состоянии */
+a:active {
+    transform: translateY(2px); /* Легкое опускание ссылки при клике */
+}
+
+/* Стилизация для текста в ссылках */
+a:focus, a:hover {
+    outline: none; /* Убираем стандартное выделение при фокусе */
+}
